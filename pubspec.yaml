@@ -63,6 +63,8 @@ flutter:
   assets:
     - assets/images/home_img.png
     - assets/images/back_arrow.png
+    - assets/images/google_Icon.png 
+    - assets/images/fb_Icon.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

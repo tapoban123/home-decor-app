@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TextFieldHeading extends StatelessWidget {
+class AuthTextFieldHeading extends StatelessWidget {
   final String text;
 
-  const TextFieldHeading({
+  const AuthTextFieldHeading({
     super.key,
     required this.text,
   });
@@ -15,7 +15,7 @@ class TextFieldHeading extends StatelessWidget {
       style: const TextStyle(
         fontFamily: "Poppins",
         fontWeight: FontWeight.w500,
-        fontSize: 20,
+        fontSize: 18,
       ),
     );
   }

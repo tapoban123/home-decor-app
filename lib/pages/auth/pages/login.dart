@@ -1,6 +1,11 @@
 import 'package:chat_app/commons/theme/custom_colors.dart';
+import 'package:chat_app/pages/auth/pages/sign_up.dart';
+import 'package:chat_app/pages/auth/widgets/auth_footer.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field.dart';
-import 'package:chat_app/pages/auth/widgets/text_field_heading.dart';
+import 'package:chat_app/pages/auth/widgets/auth_app_bar.dart';
+import 'package:chat_app/pages/auth/widgets/auth_text_field_heading.dart';
+import 'package:chat_app/pages/home/widgets/auth_button.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -10,29 +15,17 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CustomColors.whiteColor,
-      appBar: AppBar(
-        leading: Image.asset(
-          "assets/images/back_arrow.png",
-        ),
-        toolbarHeight: 80,
-        centerTitle: true,
-        title: const Text(
-          "Log In",
-          style: TextStyle(
-            fontFamily: "Poppins",
-            color: Color(0xfff4b5a4),
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+      appBar: const AuthAppBar(
+        appBarText: "Log In",
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0).copyWith(top: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0).copyWith(top: 18),
         child: SizedBox(
           width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Welcome",
                 style: TextStyle(
                   fontFamily: "Poppins",
@@ -40,31 +33,76 @@ class LoginPage extends StatelessWidget {
                   fontSize: 24,
                 ),
               ),
-              Text(
+              const Text(
                 "Please enter your details to proceed.",
                 style: TextStyle(
                   fontFamily: "Poppins",
                   fontSize: 12,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              TextFieldHeading(text: "Username Or Email"),
-              SizedBox(
+              const AuthTextFieldHeading(text: "Username Or Email"),
+              const SizedBox(
+                height: 10,
+              ),
+              const AuthTextField(
+                hintText: "example@example.com",
+              ),
+              const SizedBox(
+                height: 26,
+              ),
+              const AuthTextFieldHeading(text: "Password"),
+              const SizedBox(
                 height: 10,
               ),
               AuthTextField(
-                hintText: "example@example.com",
+                hintText: "\u2022 " * 5,
+                obsecureText: true,
               ),
-              SizedBox(
-                height: 26,
+              const SizedBox(
+                height: 60,
               ),
-              TextFieldHeading(text: "Password"),
-              SizedBox(
-                height: 10,
+              Expanded(
+                flex: 4,
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: AuthButton(
+                        buttonColor: CustomColors.lightPinkColor,
+                        buttonText: "Log In",
+                        textColor: CustomColors.deepPinkColor,
+                        onTap: () {},
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Forgot Password?",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: "Poppins",
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-              AuthTextField(hintText: "\u2022 " * 5)
+              const Expanded(
+                flex: 3,
+                child: AuthFooter(
+                  navigateToPage: SignUpPage(),
+                  navigateToText: "Sign Up",
+                ),
+              )
             ],
           ),
         ),
