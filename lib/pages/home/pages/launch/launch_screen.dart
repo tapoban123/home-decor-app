@@ -1,10 +1,12 @@
+import 'package:chat_app/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/pages/login.dart';
 import 'package:chat_app/pages/auth/pages/sign_up.dart';
+import 'package:chat_app/pages/home/pages/launch/common/home_icon.dart';
 import 'package:chat_app/pages/home/widgets/auth_button.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class LaunchScreen extends StatelessWidget {
+  const LaunchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,38 +24,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Image.asset("assets/images/home_img.png"),
-                    const Text(
-                      "HOME",
-                      style: TextStyle(
-                        fontFamily: "Poppins",
-                        fontSize: 58,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xfff4b5a4),
-                      ),
-                      textHeightBehavior: TextHeightBehavior(
-                        applyHeightToFirstAscent: false,
-                        applyHeightToLastDescent: false,
-                        leadingDistribution:
-                            TextLeadingDistribution.proportional,
-                      ),
-                    ),
-                    const Text(
-                      "DECOR",
-                      style: TextStyle(
-                        fontFamily: "Inter",
-                        fontSize: 33,
-                        fontWeight: FontWeight.normal,
-                        color: Color(0xfff4b5a4),
-                        letterSpacing: 15,
-                      ),
-                      textHeightBehavior: TextHeightBehavior(
-                        applyHeightToFirstAscent: false,
-                        applyHeightToLastDescent: false,
-                        leadingDistribution:
-                            TextLeadingDistribution.proportional,
-                      ),
-                    ),
+                    HomeIcon(color: CustomColors.lightPinkColor),
                     const SizedBox(
                       height: 40,
                     ),

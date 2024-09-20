@@ -9,11 +9,13 @@ StateProvider<bool> obsecureTextProvider = StateProvider<bool>(
 class AuthTextField extends ConsumerWidget {
   final String hintText;
   final bool obsecureText;
+  final Color fillColor;
 
   const AuthTextField({
     super.key,
     required this.hintText,
     this.obsecureText = false,
+    this.fillColor = const Color(0xfffaf0e6),
   });
 
   @override
@@ -29,7 +31,7 @@ class AuthTextField extends ConsumerWidget {
       decoration: InputDecoration(
         enabledBorder: textFieldBorder,
         focusedBorder: textFieldBorder,
-        fillColor: const Color(0xfffaf0e6),
+        fillColor: fillColor,
         filled: true,
         suffixIcon: obsecureText
             ? GestureDetector(
@@ -47,9 +49,9 @@ class AuthTextField extends ConsumerWidget {
               )
             : null,
         hintText: hintText,
-        hintStyle: const TextStyle(
+        hintStyle: TextStyle(
           fontFamily: "Poppins",
-          color: Color(0xffdcbeb6),
+          color: const Color(0xffdcbeb6).withOpacity(0.5),
         ),
         contentPadding: const EdgeInsets.symmetric(
           vertical: 12,

@@ -5,7 +5,6 @@ import 'package:chat_app/pages/auth/widgets/auth_text_field.dart';
 import 'package:chat_app/pages/auth/widgets/auth_app_bar.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field_heading.dart';
 import 'package:chat_app/pages/home/widgets/auth_button.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -14,7 +13,6 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.whiteColor,
       appBar: const AuthAppBar(
         appBarText: "Log In",
       ),

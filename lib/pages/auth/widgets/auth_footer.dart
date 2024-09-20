@@ -1,4 +1,3 @@
-import 'package:chat_app/pages/auth/pages/sign_up.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
