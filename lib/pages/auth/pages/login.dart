@@ -1,6 +1,5 @@
 import 'package:chat_app/navigation/bottom_nav_controller.dart';
 import 'package:chat_app/pages/auth/pages/forgot_password.dart';
-import 'package:chat_app/pages/home/pages/home_screen.dart';
 import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/pages/sign_up.dart';
 import 'package:chat_app/pages/auth/widgets/auth_footer.dart';

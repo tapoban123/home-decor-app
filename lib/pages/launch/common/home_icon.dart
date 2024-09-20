@@ -1,4 +1,3 @@
-import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomeIcon extends StatelessWidget {

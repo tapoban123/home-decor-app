@@ -1,9 +1,7 @@
 import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/navigation/widgets/nav_icon.dart';
-import 'package:chat_app/providers/navigation_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class BottomNavBar extends ConsumerWidget {
   const BottomNavBar({super.key});

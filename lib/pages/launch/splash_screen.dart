@@ -4,7 +4,6 @@ import 'package:chat_app/pages/launch/launch_screen.dart';
 import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/launch/common/home_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

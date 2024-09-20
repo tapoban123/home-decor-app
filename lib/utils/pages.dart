@@ -14,7 +14,7 @@ List<Widget> pages = [
 ];
 
 class Pages {
-  static Widget homePage =  HomeScreen();
+  static Widget homePage = HomeScreen();
   static Widget categoriesPage = const CategoriesScreen();
   static Widget cartPage = const CartScreen();
   static Widget wishlistPage = const WishlistScreen();
