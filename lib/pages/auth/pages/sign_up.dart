@@ -1,4 +1,6 @@
-import 'package:chat_app/commons/theme/custom_colors.dart';
+import 'package:chat_app/navigation/bottom_nav_controller.dart';
+import 'package:chat_app/pages/home/pages/home_screen.dart';
+import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/pages/login.dart';
 import 'package:chat_app/pages/auth/widgets/auth_app_bar.dart';
 import 'package:chat_app/pages/auth/widgets/auth_footer.dart';
@@ -59,7 +61,11 @@ class SignUpPage extends StatelessWidget {
                 buttonColor: CustomColors.lightPinkColor,
                 buttonText: "Sign Up",
                 textColor: CustomColors.deepPinkColor,
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => const BottomNavController(),
+                  ));
+                },
               ),
               const SizedBox(
                 height: 18,

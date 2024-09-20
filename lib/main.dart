@@ -1,7 +1,7 @@
-import "package:chat_app/commons/theme/custom_colors.dart";
+import "package:chat_app/utils/commons/theme/custom_colors.dart";
 import "package:chat_app/navigation/bottom_nav_controller.dart";
 import "package:chat_app/pages/auth/pages/set_password.dart";
-import "package:chat_app/pages/home/pages/launch/splash_screen.dart";
+import "package:chat_app/pages/launch/splash_screen.dart";
 import "package:flutter/material.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
 
@@ -22,7 +22,7 @@ class ChatApp extends StatelessWidget {
       theme: ThemeData.light(useMaterial3: true).copyWith(
         scaffoldBackgroundColor: CustomColors.whiteColor,
       ),
-      home: BottomNavController(),
+      home: SplashScreen(),
     );
   }
 }

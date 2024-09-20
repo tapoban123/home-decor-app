@@ -1,4 +1,4 @@
-import 'package:chat_app/commons/theme/custom_colors.dart';
+import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/widgets/auth_app_bar.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field_heading.dart';

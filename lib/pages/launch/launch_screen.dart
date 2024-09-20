@@ -1,7 +1,7 @@
-import 'package:chat_app/commons/theme/custom_colors.dart';
+import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/pages/login.dart';
 import 'package:chat_app/pages/auth/pages/sign_up.dart';
-import 'package:chat_app/pages/home/pages/launch/common/home_icon.dart';
+import 'package:chat_app/pages/launch/common/home_icon.dart';
 import 'package:chat_app/pages/home/widgets/auth_button.dart';
 import 'package:flutter/material.dart';
 

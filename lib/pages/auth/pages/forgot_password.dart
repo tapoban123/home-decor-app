@@ -1,4 +1,5 @@
-import 'package:chat_app/commons/theme/custom_colors.dart';
+import 'package:chat_app/pages/auth/pages/set_password.dart';
+import 'package:chat_app/utils/commons/theme/custom_colors.dart';
 import 'package:chat_app/pages/auth/widgets/auth_app_bar.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field.dart';
 import 'package:chat_app/pages/auth/widgets/auth_text_field_heading.dart';
@@ -73,7 +74,11 @@ class ForgotPasswordPage extends StatelessWidget {
                         buttonColor: CustomColors.lightPinkColor,
                         buttonText: "Next",
                         textColor: CustomColors.deepPinkColor,
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const SetPasswordPage(),
+                          ));
+                        },
                       ),
                     )
                   ],
